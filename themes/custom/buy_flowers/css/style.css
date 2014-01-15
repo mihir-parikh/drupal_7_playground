@@ -1,0 +1,56 @@
+/*******Common*******/
+
+/*Clear all predefined margins and paddings to make it easier to style*/
+* {
+	margin: 0;
+	padding: 0
+}
+
+/*Prevent page-shift to right when little or no content*/
+html{
+	overflow-y: scroll;
+}
+
+/*Change the default font to Arial. Generic sans-serif will be applied if Arial 
+is not available*/
+body{
+	font-family: Arial, sans-serif;
+}
+
+/*Remove dotted outline from links*/
+a{
+	color: #000;
+	outline: none;
+}
+
+/******Layout******/
+
+/*Wrapper*/
+/*Make it 1000px wide and center it*/
+#wrapper{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+/*Navigation*/
+/*Define width, height, border and background-color*/
+#navigation{
+	width: 1000px;
+	height: 50px;
+	border: 1px solid #ccc;
+	border-top: none;
+	background-color: #eee;
+}
+
+/*list-style removes the dots, line-height centers the links vertically*/
+#navigation ul{
+	width: 400px;
+	margin: 0 auto;
+	list-style: none;
+	line-height: 50px;
+}
+
+/*Spread the list elements horizontally*/
+#navigation ul li{
+	display: inline;
+}
