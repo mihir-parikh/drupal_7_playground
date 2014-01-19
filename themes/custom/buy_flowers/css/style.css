@@ -54,3 +54,47 @@ a{
 #navigation ul li{
 	display: inline;
 }
+
+/*Header*/
+#header{
+	width: 1000px;
+	height: 150px;
+	border: 1px solid #ccc;
+	border-top: none;
+	background-color: #ddd;
+}
+
+#header h1{
+	line-height: 150px;
+	padding: 0 0 0 60px;
+	font-size: 40px;
+}
+
+p{
+	padding: 1em;
+}
+
+/*page-wrapper*/
+#page-wrapper{
+	width: 1000px;
+	border: 1px solid #ccc;
+	border-top: none;
+	overflow: hidden;
+}
+
+/*Sidebar*/
+#sidebar{
+	width: 300px;
+	float: right;
+	border-left: 1px solid #ccc;
+	background-color: #eee;	
+	margin-bottom: -10000px;
+	padding: 20px 20px 10000px 20px;
+}
+
+/*Content*/
+#content{
+	margin-right: 300px;
+	padding: 20px;
+	overflow: scroll;
+}
