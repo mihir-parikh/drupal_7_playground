@@ -1,0 +1,8 @@
+body{
+	margin: 0px;
+}
+/*Black header section*/
+.black-header{
+	height: 50px;
+	background-color: #333;
+}
