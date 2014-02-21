@@ -1,7 +1,7 @@
 <div id = "wrapper">
 	<div id = "header">
 		<a href = "<?php print $front_page; ?>">
-			<img src = "/<?php print $directory; ?>/images/logo.png" alt = "<?php print $site_name; ?>" />
+			<img src = "<?php print $directory; ?>/images/logo.png" alt = "<?php print $site_name; ?>" />
 		</a>
 
 		<?php if($main_menu): ?>
