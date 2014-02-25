@@ -1,6 +1,0 @@
-name = Buy flowers theme
-core = 7.x
-engine = phptemplate
-
-;CSS
-stylesheets[all][] = css/style.css
