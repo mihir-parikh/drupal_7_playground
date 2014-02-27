@@ -1,0 +1,45 @@
+<?php
+/**
+* @file 
+* User Warn module file
+* 
+* This module allows site administrators to send a stock warning email to a specified 
+* user or users through the admin interface. 
+* Administrators can configure the default e-mail including token replacement.
+*/
+
+/**
+* Implement hook_help()
+*/
+function user_warn_help($path, $arg){
+	if($path == "admin/help#user_warn"){
+		return "User Warn allows site administrators to send a standard e-mail to 
+		site users to notify them of improper behaviour.";
+	}
+}
+
+/**
+* Implement hook_menu()
+*/
+function user_warn_menu(){
+	$items = array();
+
+	$items["admin/config/people/user_warn"] = array(
+		"title" => "User Warn",
+		"description" => "Configuration for the User Warn module.",
+		"page callback" => "drupal_get_form",
+		"page arguments" => array("user_warn_form"),
+		"access arguments" => array("administer users"),
+		"type" => MENU_NORMAL_ITEM
+	);
+	$items["admin/%/warn"] = array(
+		"title" => "Warn",
+		"description" => "Send e-mail to a user about improper site behaviour.", 
+		"page callback" => "drupal_get_form",
+		"page arguments" => array("user_warn_confirm_form", 1),
+		"access arguments" => array("administer user"),
+		"type" => MENU_LOCAL_TASK
+	);
+
+	return $items;
+}
