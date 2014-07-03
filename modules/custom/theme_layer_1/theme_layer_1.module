@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * @file
+ * Simple examples for working with theme layer.
+ */
+
+/** 
+ * Implements hook_theme_registry_alter()
+ */
+function theme_layer_1_theme_registry_alter(&$theme_registry){
+   var_dump($theme_registry);
+}

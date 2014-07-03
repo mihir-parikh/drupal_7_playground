@@ -1,0 +1,5 @@
+name = Theme registry output
+description = An example module on working with theme layer.
+package = Simple Modules 1
+core = 7.x
+files[] = theme_layer_1.module
