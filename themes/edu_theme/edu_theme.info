@@ -8,3 +8,5 @@ regions[content] = Content
 regions[footer] = Footer
 
 regions_hidden[] = footer
+
+stylesheets[all][] = style.css
