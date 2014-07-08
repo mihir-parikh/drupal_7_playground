@@ -1,0 +1,5 @@
+name = Edu theme
+description = A theme build for self education
+core = 7.x
+engine = phptemplate
+
