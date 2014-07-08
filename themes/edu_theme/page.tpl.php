@@ -1,11 +1,10 @@
 <?php
 
+// $Id: page.tpl.php,v 1.47 2010/11/05 01:25:33 dries Exp $
+
 /**
  * @file
  * Default theme implementation to display a single Drupal page.
- *
- * The doctype, html, head and body tags are not in this template. Instead they
- * can be found in the html.tpl.php template in this directory.
  *
  * Available variables:
  *
@@ -67,9 +66,6 @@
  * @see template_preprocess()
  * @see template_preprocess_page()
  * @see template_process()
- * @see html.tpl.php
- *
- * @ingroup themeable
  */
 ?>
 
@@ -103,6 +99,7 @@
         </div> <!-- /#name-and-slogan -->
       <?php endif; ?>
 
+      <?php if (theme_get_setting('edu_theme_subheading')): ?><h4><?php print theme_get_setting('edu_theme_subheading'); ?></h4><?php endif; ?>
       <?php print render($page['header']); ?>
 
     </div></div> <!-- /.section, /#header -->
@@ -127,6 +124,7 @@
         <a id="main-content"></a>
         <?php print render($title_prefix); ?>
         <?php if ($title): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
+
         <?php print render($title_suffix); ?>
         <?php if ($tabs): ?><div class="tabs"><?php print render($tabs); ?></div><?php endif; ?>
         <?php print render($page['help']); ?>

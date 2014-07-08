@@ -12,3 +12,5 @@ regions_hidden[] = footer
 stylesheets[all][] = style.css
 
 scripts[] = edu_theme.js
+
+settings[edu_theme_subheading] = D7 playground sub-heading
