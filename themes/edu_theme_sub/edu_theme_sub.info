@@ -4,6 +4,10 @@ core = 7.x
 engine = phptemplate
 base theme = bartik
 
+stylesheet[all][] = css/style.css
+
+scripts[] = script.js
+
 ; Regions copied from base theme.
 regions[header] = Header
 regions[help] = Help
