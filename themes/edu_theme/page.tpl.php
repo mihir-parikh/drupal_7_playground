@@ -99,7 +99,7 @@
         </div> <!-- /#name-and-slogan -->
       <?php endif; ?>
 
-      <?php if (theme_get_setting('edu_theme_subheading')): ?><h4><?php print theme_get_setting('edu_theme_subheading'); ?></h4><?php endif; ?>
+      <?php if ($edu_theme_subheading): ?><h4><?php print $edu_theme_subheading; ?></h4><?php endif; ?>
       <?php print render($page['header']); ?>
 
     </div></div> <!-- /.section, /#header -->
