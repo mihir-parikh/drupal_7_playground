@@ -14,3 +14,13 @@ stylesheets[all][] = style.css
 scripts[] = edu_theme.js
 
 settings[edu_theme_subheading] = D7 playground sub-heading
+
+features[] = logo
+features[] = name
+features[] = slogan
+features[] = node_user_picture
+features[] = comment_user_picture
+features[] = search
+features[] = favicon
+features[] = main_menu
+features[] = secondary_menu
