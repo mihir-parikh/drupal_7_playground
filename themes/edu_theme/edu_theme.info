@@ -9,7 +9,7 @@ regions[footer] = Footer
 
 regions_hidden[] = footer
 
-stylesheets[all][] = style.css
+;stylesheets[all][] = style.css
 
 scripts[] = edu_theme.js
 
