@@ -16,7 +16,7 @@ function edu_theme_overrides_preprocess_image(&$variables){
 }
 
 //Use different templates based on conditions
-function edu_theme_preprocess_page(&$variables){
+function edu_theme_overrides_preprocess_page(&$variables){    
     //The following log in page will be displayed for anonymous user
     if($variables["user"]->uid == 0 && $_GET["q"] != "user"){
         //Adding a new variable in preprocess function which will be available in page.tpl.php

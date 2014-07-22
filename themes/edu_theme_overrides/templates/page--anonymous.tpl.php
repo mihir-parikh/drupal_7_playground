@@ -86,5 +86,5 @@
  */
 ?>
 Any anonymous user must <?php echo $log_in; ?> first.
-
+<br /><br />
 <i>A theme template can be forced based on different conditions using page preprocess function.</i>
