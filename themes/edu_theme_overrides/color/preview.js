@@ -27,6 +27,8 @@
       // Footer wrapper background.
       $('#preview #preview-footer-wrapper', form).css('background-color', $('#palette input[name="palette[footer]"]', form).val());
 
+      $('#preview #preview-input input', form).css('background-color', $('#palette input[name="palette[bgcolorinput]"]', form).val());
+
       // CSS3 Gradients.
       var gradient_start = $('#palette input[name="palette[top]"]', form).val();
       var gradient_end = $('#palette input[name="palette[bottom]"]', form).val();

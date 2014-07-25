@@ -15,6 +15,7 @@ $info = array(
     'titleslogan' => t('Title and slogan'),
     'text' => t('Text color'),
     'link' => t('Link color'),
+    'bgcolorinput' => 'Background colour for input'
   ),
   // Pre-defined color schemes.
   'schemes' => array(
@@ -30,6 +31,7 @@ $info = array(
         'titleslogan' => '#fffeff',
         'text' => '#3b3b3b',
         'link' => '#0071B3',
+        'bgcolorinput' => '#f2c4e9',
       ),
     ),
     'firehouse' => array(
@@ -44,6 +46,7 @@ $info = array(
         'titleslogan' => '#fffeff',
         'text' => '#3b3b3b',
         'link' => '#d6121f',
+        'bgcolorinput' => '#f2c4e9',
       ),
     ),
     'ice' => array(
@@ -58,6 +61,7 @@ $info = array(
         'titleslogan' => '#000000',
         'text' => '#4a4a4a',
         'link' => '#019dbf',
+        'bgcolorinput' => '#f2c4e9',
       ),
     ),
     'plum' => array(
@@ -72,6 +76,7 @@ $info = array(
         'titleslogan' => '#ffffff',
         'text' => '#301313',
         'link' => '#9d408d',
+        'bgcolorinput' => '#f2c4e9',
       ),
     ),
     'slate' => array(
@@ -86,6 +91,7 @@ $info = array(
         'titleslogan' => '#ffffff',
         'text' => '#3b3b3b',
         'link' => '#0073b6',
+        'bgcolorinput' => '#f2c4e9',
       ),
     ),
   ),
