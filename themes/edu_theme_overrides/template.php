@@ -35,6 +35,8 @@ function edu_theme_overrides_preprocess_page(&$variables){
             $variables["theme_hook_suggestions"][] = "page__anonymous__".$variables["node"]->type;
         }
     }
+    
+    $variables["classes_array"][] = "page_sample_class";
 }
 
 //Override theme_image()
@@ -68,4 +70,12 @@ function edu_theme_overrides_username($variables) {
     $output = '<span' . drupal_attributes($variables['attributes_array']) . '>' . $variables['name'] . $variables['extra'] . '</span>';
   }
   return $output;
+}
+
+function edu_theme_overrides_preprocess_html(&$variables){
+    $variables["classes_array"][] = "html_sample_class";
+}
+
+function edu_theme_overrides_preprocess_node(&$variables){
+    $variables["classes_array"][] = "node_sample_class";
 }
