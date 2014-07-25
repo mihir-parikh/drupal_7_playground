@@ -37,6 +37,10 @@ function edu_theme_overrides_preprocess_page(&$variables){
     }
     
     $variables["classes_array"][] = "page_sample_class";
+    
+    //Apply user defined background color
+    $input_color = theme_get_setting("background_input_fields");
+    drupal_add_css("input {background-color:".$input_color.";}", "inline");
 }
 
 //Override theme_image()
