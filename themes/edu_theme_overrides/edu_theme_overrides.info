@@ -3,6 +3,9 @@ core = 7.x
 engine = phptemplate
 base theme = bartik
 
+; Setting default color value
+settings[background_input_fields] = yellow
+
 regions[header] = Header
 regions[help] = Help
 regions[page_top] = Page top
