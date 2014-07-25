@@ -6,6 +6,8 @@ base theme = bartik
 ; Setting default color value
 settings[background_input_fields] = yellow
 
+stylesheets[all][] = css/colors.css
+
 regions[header] = Header
 regions[help] = Help
 regions[page_top] = Page top
